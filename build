@@ -1,0 +1,4 @@
+npx quartz build --output docs/ 
+ga .
+gc
+gp origin trunk
