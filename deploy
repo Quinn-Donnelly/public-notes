@@ -1,4 +1,4 @@
 npx quartz build --output docs/ 
-ga .
-gc
-gp origin trunk
+git add .
+git commit
+git push origin trunk
