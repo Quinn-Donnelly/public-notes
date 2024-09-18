@@ -49,12 +49,12 @@ export const defaultContentPageLayout: PageLayout = {
                 zoom: true,
                 depth: -1,
                 scale: 0.9,
-                repelForce: 1,
+                repelForce: 0.5,
                 centerForce: 0.3,
                 linkDistance: 30,
                 fontSize: 0.6,
                 opacityScale: 1,
-                removeTags: [], // what tags to remove from the graph
+                removeTags: ["meta"], // what tags to remove from the graph
                 showTags: true, // whether to show tags in the graph
             },
         }),
