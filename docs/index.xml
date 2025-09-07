@@ -42,29 +42,29 @@
     <description>Don’t just have a linear increasing curve, exponential curves are good for easy enter high mastery outcomes that lends itself to competitive games. People become desensitized to stimuli over time so an ever increasing difficulty will no longer get the response your looking for they will get bored or frustrated.</description>
     <pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>2025-05-22 Obsidian Bases Impact</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/2025-05-22-Obsidian-Bases-Impact</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/2025-05-22-Obsidian-Bases-Impact</guid>
-    <description>I think the tech might change due to thins thought Obsidian bases over notion will evaluate based on needs and usage. Requirements My need for tasks and planning where I rely on notion.</description>
-    <pubDate>Thu, 22 May 2025 00:00:00 GMT</pubDate>
+    <title>2025-06-25 name entry</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-25-name-entry</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-25-name-entry</guid>
+    <description>Summary Need to have the user able to enter their name if they end up scoring in the top X where X is leaderboard How or what does input of text work especailly with controller does engine ...</description>
+    <pubDate>Wed, 25 Jun 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>2025-05-20 directional throwables</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/2025-05-20-directional-throwables</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/2025-05-20-directional-throwables</guid>
-    <description>Goal I want the player to be able to aim the throwable item that they can teleport to. Questions Will the player be able to aim horizontal and vertical? No just the way they are facing How do you tell which way the player is facing and allow or disallow them to change that direction at various points - mid air? just look at input vectors when calling move and slide track the boolean Anki export_node_path annotation NodePath type .</description>
-    <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
+    <title>2025-06-23 scoreboard polish logic</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-23-scoreboard-polish-logic</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-23-scoreboard-polish-logic</guid>
+    <description>Summary Fix the sorting logic in scoreboard It’s storing the first score multiple times moving to signals instead of being caught up in the program flow will be better Move the GameManager ...</description>
+    <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>writing great developer documentation</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/writing-great-developer-documentation</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/writing-great-developer-documentation</guid>
+    <title>2025-06-22 scoreboard</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-22-scoreboard</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-22-scoreboard</guid>
+    <description>Got the scores saving to a file, Scoreboard ordering is seemingly having some issues, still need to display the board to the user, need to move the function interactions to use signals ...</description>
+    <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2025-06-07 ticking score</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-07-ticking-score</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-07-ticking-score</guid>
     <description>...</description>
-    <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>2025-05-12 Make game win</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/2025-05-12-Make-game-win</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/2025-05-12-Make-game-win</guid>
-    <description>...</description>
-    <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+    <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
