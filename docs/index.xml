@@ -42,29 +42,29 @@
     <description>Don’t just have a linear increasing curve, exponential curves are good for easy enter high mastery outcomes that lends itself to competitive games. People become desensitized to stimuli over time so an ever increasing difficulty will no longer get the response your looking for they will get bored or frustrated.</description>
     <pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>2025-06-25 name entry</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-25-name-entry</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-25-name-entry</guid>
-    <description>Summary Need to have the user able to enter their name if they end up scoring in the top X where X is leaderboard How or what does input of text work especailly with controller does engine ...</description>
-    <pubDate>Wed, 25 Jun 2025 00:00:00 GMT</pubDate>
+    <title>2025-09-03 game rounds and real time</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-09-03-game-rounds-and-real-time</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-09-03-game-rounds-and-real-time</guid>
+    <description>Summary I want to either move away from the real time ticking clock or move to make more rounds. I think I need to remove real time first so I can start figuring out this game design space.</description>
+    <pubDate>Wed, 03 Sep 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>2025-06-23 scoreboard polish logic</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-23-scoreboard-polish-logic</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-23-scoreboard-polish-logic</guid>
-    <description>Summary Fix the sorting logic in scoreboard It’s storing the first score multiple times moving to signals instead of being caught up in the program flow will be better Move the GameManager ...</description>
-    <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+    <title>2025-08-27 winning</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-08-27-winning</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-08-27-winning</guid>
+    <description>Summary Getting the win condition to trigger trigger win on rounds complete Body fixed assert bug on get rounds winning is now triggered and pauses / cleansup posts giant win message ...</description>
+    <pubDate>Wed, 27 Aug 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>2025-06-22 scoreboard</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-22-scoreboard</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-22-scoreboard</guid>
-    <description>Got the scores saving to a file, Scoreboard ordering is seemingly having some issues, still need to display the board to the user, need to move the function interactions to use signals ...</description>
-    <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+    <title>2025-08-26 round cost display</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-08-26-round-cost-display</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-08-26-round-cost-display</guid>
+    <description>Summary This morning I’m going to implement some quality of life on the rounds. I don’t know that this is the most useful things to work on though it still doesn’t feel like a game.</description>
+    <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>2025-06-07 ticking score</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/2025-06-07-ticking-score</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/2025-06-07-ticking-score</guid>
-    <description>...</description>
-    <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+    <title>2025-08-25 Goals</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-08-25-Goals</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-08-25-Goals</guid>
+    <description>Right now the game is lacking in objective or force pushing you forward. I think the economy of unlocks would be good. Adding the ability to pick between some options and unlock them.</description>
+    <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
