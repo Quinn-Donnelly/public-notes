@@ -6,12 +6,6 @@
       <description>Last 10 notes on Quintin Donnelly</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Spaced Repetition System</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/spaced-repetition-system</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/spaced-repetition-system</guid>
-    <description>What am I doing with this? What I use this for is effectively my takeaways. Things that resonate with me. Ah Ha moments or key insights and learnings that I want to recall the specifics of so that they are committed to memory.</description>
-    <pubDate>Thu, 07 Sep 2924 00:00:00 GMT</pubDate>
-  </item><item>
     <title>Brandon Boswell Year in Review</title>
     <link>https://quartz.jzhao.xyz/Sources/Brandon-Boswell-Year-in-Review</link>
     <guid>https://quartz.jzhao.xyz/Sources/Brandon-Boswell-Year-in-Review</guid>
@@ -65,6 +59,12 @@
     <guid>https://quartz.jzhao.xyz/Knowledge/writing-great-developer-documentation</guid>
     <description>...</description>
     <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2025-05-12 Make game win</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-05-12-Make-game-win</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-05-12-Make-game-win</guid>
+    <description>...</description>
+    <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
