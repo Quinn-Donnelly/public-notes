@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Breakout Game</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Breakout Game"/><meta property="og:description" content="Kickoff I want to make a game that is a small step up in difficulty on Tic Tac Toe Game. I learned better decoupling signal approaches from that one, so I want to start dipping my toe into simple physics."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Kickoff I want to make a game that is a small step up in difficulty on Tic Tac Toe Game. I learned better decoupling signal approaches from that one, so I want to start dipping my toe into simple physics."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Knowledge/Breakout-Game"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"></div><div class="center"><div class="page-header"><div class="popover-hint"><h2 class="page-title"><a href="..">Quintin Donnelly</a></h2><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Knowledge/">Knowledge</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Breakout Game</a></div></nav><h1 class="article-title">Breakout Game</h1><p show-comma="true" class="content-meta"><span>Oct 12, 2025</span><span>5 min read</span></p><ul class="tags"><li><a href="../tags/project/game" class="internal tag-link">project/game</a></li><li><a href="../tags/in-progress" class="internal tag-link">in-progress</a></li></ul></div></div><article class="popover-hint"><h1 id="kickoff">Kickoff<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#kickoff" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>I want to make a game that is a small step up in difficulty on <a href="../Knowledge/Tic-Tac-Toe-Game" class="internal alias" data-slug="Knowledge/Tic-Tac-Toe-Game">Tic Tac Toe Game</a>. I learned better decoupling signal approaches from that one, so I want to start dipping my toe into simple physics. Breakout is a classic game of playing with physics in a rather simple system.</p>
+<h1 id="2025-10-13"><a href="../2025-10-13" class="internal" data-slug="2025-10-13">2025-10-13</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2025-10-13" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>I need to figure out the best way to get the bricks to break. To do this I need to actually cause breaking to happen then I can debate the finer points of how it’s doing it. Lets get a quick and dirty way working.</p>
+<ul>
+<li>? What is this ECS registry I keep coming across in mentions?</li>
+</ul>
+<p>from testing today. The pattern that makes the most sense to me from a decoupling yet somewhat type safe option is the following:<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label" class="internal alias">1</a></sup><sup><a href="#user-content-fn-8" id="user-content-fnref-8" data-footnote-ref aria-describedby="footnote-label" class="internal alias">2</a></sup><sup><a href="#user-content-fn-9" id="user-content-fnref-9" data-footnote-ref aria-describedby="footnote-label" class="internal alias">3</a></sup></p>
+<ol>
+<li>Component registers itself with parent node (or scene root) with <code>set_meta</code>. Then it can also add the scene root node to a group.<sup><a href="#user-content-fn-4" id="user-content-fnref-4" data-footnote-ref aria-describedby="footnote-label" class="internal alias">4</a></sup><sup><a href="#user-content-fn-5" id="user-content-fnref-5" data-footnote-ref aria-describedby="footnote-label" class="internal alias">5</a></sup><sup><a href="#user-content-fn-6" id="user-content-fnref-6" data-footnote-ref aria-describedby="footnote-label" class="internal alias">6</a></sup></li>
+<li>The Component’s public functions are now the interface.</li>
+<li>Exterior objects can then check if something is in the group for that component. If yes <code>get_meta</code> then check it’s not <code>null</code> if so then they can call the public functions on it.<sup><a href="#user-content-fn-7" id="user-content-fnref-7" data-footnote-ref aria-describedby="footnote-label" class="internal alias">7</a></sup></li>
+</ol>
+<p>Honestly right now the group may be unneeded. I think the component being null is enough right? Yea group isn’t needed.</p>
+<p>You can use <code>##</code> to have tooltip on the <code>@export</code> fields in editor<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label" class="internal alias">8</a></sup><sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref aria-describedby="footnote-label" class="internal alias">9</a></sup></p>
+<h1 id="2025-10-14"><a href="../2025-10-14" class="internal" data-slug="2025-10-14">2025-10-14</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2025-10-14" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Today I’m going to work on the bounce mechanics for the ball. Ideally when it breaks the brick it bounces back. Then when it hits the paddle it bounces again.</p>
+<p>Controlling it’s movement I’m assuming I’ll need to implement the position change and track velocity.</p>
+<p>Remember that for out eventbus implementation we have to use <code>@warning_ignore_start(&quot;unused_signal&quot;)</code> and then <code>@warning_ignore_restore(&quot;unused_signal&quot;)</code> to avoid all the warnings about signal definitions not being used.<sup><a href="#user-content-fn-10" id="user-content-fnref-10" data-footnote-ref aria-describedby="footnote-label" class="internal alias">10</a></sup><sup><a href="#user-content-fn-11" id="user-content-fnref-11" data-footnote-ref aria-describedby="footnote-label" class="internal alias">11</a></sup></p>
+<p><code>area_entered</code> vs <code>body_entered</code> got me there for a bit.<sup><a href="#user-content-fn-12" id="user-content-fnref-12" data-footnote-ref aria-describedby="footnote-label" class="internal alias">12</a></sup></p>
+<p>Ok I have a super rough implementation of it that just flips the velocity. Now I need to calculate the collision from center and use that to apply direction.</p>
+<p>Alright doing that math on it the body position calculations likely not the direction. After some searches I can still use <code>move_and_collide</code> on a <code>CharecterBody2D</code>. That still gives me full control of physics.</p>
+<p>Though i’ve made an error in my handling of collisions in <code>Area2D</code> there isn’t any reason I can’t implement the collisions in <code>body_entered</code> or <code>area_entered</code> the issue my angle math had was use of <code>position</code> instead of <code>global_position</code>.<sup><a href="#user-content-fn-13" id="user-content-fnref-13" data-footnote-ref aria-describedby="footnote-label" class="internal alias">13</a></sup><sup><a href="#user-content-fn-14" id="user-content-fnref-14" data-footnote-ref aria-describedby="footnote-label" class="internal alias">14</a></sup></p>
+<p>I got the bouncing to work but the paddle has odd behavior. I think I need to move away from using normal and <code>.bounce</code> on it.</p>
+<h1 id="footnotes">Footnotes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#footnotes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>START
+Basic
+What system is best used to expose the functionality of components on a node?
+Back: Metadata<br/>
+ID: 1760393528072
+END</p>
+<p>START
+Basic
+How do you make a comment a tooltip in the editor when you <code>@export</code>
+Back: you add <code>##</code> in front
+ID: 1760393528082
+END</p>
+<p>START
+Basic
+When <code>@export</code> is used on a var, what should you do to help designers in the editor
+Back: Make it a tooltip comment
+ID: 1760393528087
+END</p>
+<p>START
+Basic
+How do you put something on an objects metadata?
+Back: <code>set_meta(&quot;key&quot;, Varient)</code>
+ID: 1760393528092
+END</p>
+<p>START
+Basic
+What is a <code>Varient</code> in GoDot
+Back: It is the Generic of all types
+ID: 1760393528099
+END</p>
+<p>START
+Basic
+If you want to have a function take in an object of any type - how would you?
+Back: Make the param a <code>Varient</code>
+ID: 1760393528105
+END</p>
+<p>START
+Basic
+How do you get the metadata from an object
+Back: <code>get_meta</code>
+ID: 1760393528112
+END</p>
+<p>START
+Basic
+What is currently the best way we know to expose component functionality exterior to the scene?
+Back: Attach the component to the root nodes metadata
+ID: 1760393528119
+END</p>
+<p>START
+Basic
+To keep safe references in the metadata <code>Dictonary</code> what must we do when using <code>get_meta</code> and <code>set_meta</code>?
+Back: Use an autoload <code>Constants</code> have the key be a constant and get and set use that constant as key
+ID: 1760393528127
+END</p>
+<p>START
+Basic
+When using an EventBus autoload what must you remember to avoid issues at compilation?
+Back: Need to ignore the unused warnings
+ID: 1760444424308
+END</p>
+<p>START
+Basic
+How do you ignore unsused warnings in GoDot?
+Back: <code>@warning_ignore_start(&quot;warning_name&quot;)</code> and <code>@warning_ignore_restore(&quot;warning_name&quot;)</code>
+ID: 1760444424316
+END</p>
+<p>START
+Basic
+You want to detect when a ball (<code>Area2D</code>) hits the wall (<code>Area2D</code>). You set up a listener on <code>body_entered</code> and print the body. Nothing prints, why?
+Back: Area2D isn’t <code>body_entered</code> it’s <code>area_entered</code>
+ID: 1760444424321
+END</p>
+<p>START
+Basic
+You calculate the offset of two objects positions, you get small (0.8, 0.12) style of numbers. This can’t be right what is a common failure case as to why.
+Back: Using position instead of <code>global_position</code>
+ID: 1760444424326
+END</p>
+<p>START
+Basic
+When creating a movement class and looking to apply velocity. what would the line of code be to apply <code>velocity</code> (<code>Vector2</code>) to the object <code>thing</code> (<code>Node2D</code>)
+Back: <code>thing.global_position *= velocity * delta</code>
+ID: 1760444424332
+END</p>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#footnote-label" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li id="user-content-fn-1">
+<a href="#user-content-fnref-1" data-footnote-backref aria-label="Back to reference 1" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-8">
+<a href="#user-content-fnref-8" data-footnote-backref aria-label="Back to reference 2" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-9">
+<a href="#user-content-fnref-9" data-footnote-backref aria-label="Back to reference 3" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-4">
+<a href="#user-content-fnref-4" data-footnote-backref aria-label="Back to reference 4" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-5">
+<a href="#user-content-fnref-5" data-footnote-backref aria-label="Back to reference 5" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-6">
+<a href="#user-content-fnref-6" data-footnote-backref aria-label="Back to reference 6" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-7">
+<a href="#user-content-fnref-7" data-footnote-backref aria-label="Back to reference 7" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-2">
+<a href="#user-content-fnref-2" data-footnote-backref aria-label="Back to reference 8" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-3">
+<a href="#user-content-fnref-3" data-footnote-backref aria-label="Back to reference 9" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-10">
+<a href="#user-content-fnref-10" data-footnote-backref aria-label="Back to reference 10" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-11">
+<a href="#user-content-fnref-11" data-footnote-backref aria-label="Back to reference 11" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-12">
+<a href="#user-content-fnref-12" data-footnote-backref aria-label="Back to reference 12" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-13">
+<a href="#user-content-fnref-13" data-footnote-backref aria-label="Back to reference 13" class="data-footnote-backref internal alias">↩</a>
+</li>
+<li id="user-content-fn-14">
+<a href="#user-content-fnref-14" data-footnote-backref aria-label="Back to reference 14" class="data-footnote-backref internal alias">↩</a>
+</li>
+</ol>
+</section></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="search"><button class="search-button" id="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><button class="darkmode" id="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:0.8,&quot;repelForce&quot;:1,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:70,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:100,&quot;showTags&quot;:false,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false}"></div><button id="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:100,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:false,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content" class><ul class="overflow"><li class="depth-0"><a href="#kickoff" data-for="kickoff">Kickoff</a></li><li class="depth-0"><a href="#2025-10-13" data-for="2025-10-13">2025-10-13</a></li><li class="depth-0"><a href="#2025-10-14" data-for="2025-10-14">2025-10-14</a></li><li class="depth-0"><a href="#footnotes" data-for="footnotes">Footnotes</a></li></ul></div></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li><a href="../Knowledge/GoDot-Physics-Bodies" class="internal">GoDot Physics Bodies</a></li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.3.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
