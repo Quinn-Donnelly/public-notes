@@ -16,55 +16,55 @@
     <link>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</link>
     <guid>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</guid>
     <description>Mochi prompts?1 Math academy recommendation AI Wrappers for textbook 2 Why put prompts in notes instead of in the external programs Prompts embeded with the orignal knowledge so ...</description>
-    <pubDate>Tue, 14 Oct 2025 12:21:38 GMT</pubDate>
+    <pubDate>Mon, 20 Oct 2025 01:25:02 GMT</pubDate>
   </item><item>
-    <title>GoDot Physics Bodies</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/GoDot-Physics-Bodies</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/GoDot-Physics-Bodies</guid>
-    <description>from 2025-10-14 Breakout building I encountered confusion with what kind of physics body I should really be using in this game. This was a bit deeper than I could go into at the time.</description>
-    <pubDate>Tue, 14 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Bullet point shortcurts to highlights</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Bullet-point-shortcurts-to-highlights</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Bullet-point-shortcurts-to-highlights</guid>
+    <description>Using the list callout plugin I can have the first charecter of a list be a specail charecter to highlight the line to call attention to it. ? will highlight the line with a question.</description>
+    <pubDate>Sun, 19 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>10 day MBA</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/10-day-MBA</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/10-day-MBA</guid>
-    <description>book rec by Scott Berkun.</description>
-    <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+    <title>GoDot Transforms</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/GoDot-Transforms</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/GoDot-Transforms</guid>
+    <description>docs.godotengine.org/en/stable/_images/transforms_overview.webp .</description>
+    <pubDate>Sun, 19 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Breakout Game</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Breakout-Game</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Breakout-Game</guid>
-    <description>Kickoff I want to make a game that is a small step up in difficulty on Tic Tac Toe Game. I learned better decoupling signal approaches from that one, so I want to start dipping my toe into simple physics.</description>
-    <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+    <title>GoDot Physics Docs</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/GoDot-Physics-Docs</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/GoDot-Physics-Docs</guid>
+    <description>Physics Intro Notes Can I still move StaticBody2D? Or must they remain stationary? It says one that is not moved by the physics engine so I assume I can still move it with my code, but force ...</description>
+    <pubDate>Sat, 18 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Designing your life</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Designing-your-life</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Designing-your-life</guid>
-    <description>Book rec from Scott Berkun.</description>
-    <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Software Engineering</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Software-Engineering</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Software-Engineering</guid>
+    <description>Software Architecture System Design Data Engineering Game Development.</description>
+    <pubDate>Fri, 17 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Footnotes on side panel</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Footnotes-on-side-panel</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Footnotes-on-side-panel</guid>
-    <description>If footnote is tagged then show on side pane view of the paragraph like a sketching in margin helps the user with non linear content.</description>
-    <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Check velocity lerp</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Check-velocity-lerp</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Check-velocity-lerp</guid>
+    <description>Frame rate independent I s 1 - exp some value minus delta.</description>
+    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Look into enter tree for Godot signal</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Look-into-enter-tree-for-Godot-signal</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Look-into-enter-tree-for-Godot-signal</guid>
-    <description>Handling the race conditions using the enter_tree signal.</description>
-    <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Do curves solve my breakout x bel problem</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Do-curves-solve-my-breakout-x-bel-problem</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Do-curves-solve-my-breakout-x-bel-problem</guid>
+    <description>Used in 2025-10-15 and it did in fact make implementing the paddle behavior wayyy easier. youtu.be/cTSrjN_2qDI.</description>
+    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Look into readwise</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Look-into-readwise</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Look-into-readwise</guid>
-    <description>youtu.be/i8h4eTcxF9E.</description>
-    <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Menu for wedding</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Menu-for-wedding</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Menu-for-wedding</guid>
+    <description>3 hand passed items mini muffalatas chicken waffles Stuffed Mushrooms / mini crab cakes grazing station Spinich and atichoke dip / There is also a choice to make this crab dip which ...</description>
+    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Performance management frequency over time</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Performance-management-frequency-over-time</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Performance-management-frequency-over-time</guid>
-    <description>The longer you’ve been at the company the slower or less frequent your reviews.</description>
-    <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+    <title>My Wedding</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/My-Wedding</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/My-Wedding</guid>
+    <description>Project to track notes and things related to wedding.</description>
+    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
