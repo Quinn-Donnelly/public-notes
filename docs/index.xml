@@ -16,55 +16,55 @@
     <link>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</link>
     <guid>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</guid>
     <description>Mochi prompts?1 Math academy recommendation AI Wrappers for textbook 2 Why put prompts in notes instead of in the external programs Prompts embeded with the orignal knowledge so ...</description>
-    <pubDate>Mon, 20 Oct 2025 01:25:02 GMT</pubDate>
+    <pubDate>Sun, 26 Oct 2025 12:26:14 GMT</pubDate>
   </item><item>
-    <title>Bullet point shortcurts to highlights</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Bullet-point-shortcurts-to-highlights</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Bullet-point-shortcurts-to-highlights</guid>
-    <description>Using the list callout plugin I can have the first charecter of a list be a specail charecter to highlight the line to call attention to it. ? will highlight the line with a question.</description>
-    <pubDate>Sun, 19 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Weekly finds or weekly newsletter practice</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Weekly-finds-or-weekly-newsletter-practice</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Weekly-finds-or-weekly-newsletter-practice</guid>
+    <description>Using the #practice/newsletter will flag things that could be good for brining up in my weekly digest.</description>
+    <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>GoDot Transforms</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/GoDot-Transforms</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/GoDot-Transforms</guid>
-    <description>docs.godotengine.org/en/stable/_images/transforms_overview.webp .</description>
-    <pubDate>Sun, 19 Oct 2025 00:00:00 GMT</pubDate>
+    <title>What is the use of the second parameter in set_cell on GoDot tilemaplayer</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/What-is-the-use-of-the-second-parameter-in-set_cell-on-GoDot-tilemaplayer</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/What-is-the-use-of-the-second-parameter-in-set_cell-on-GoDot-tilemaplayer</guid>
+    <description></description>
+    <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>GoDot Physics Docs</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/GoDot-Physics-Docs</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/GoDot-Physics-Docs</guid>
-    <description>Physics Intro Notes Can I still move StaticBody2D? Or must they remain stationary? It says one that is not moved by the physics engine so I assume I can still move it with my code, but force ...</description>
-    <pubDate>Sat, 18 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Ysort and rendering have conflicting scene tree wants from inialization</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Ysort-and-rendering-have-conflicting-scene-tree-wants-from-inialization</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Ysort-and-rendering-have-conflicting-scene-tree-wants-from-inialization</guid>
+    <description>Think through this a bit. I find that there is a conflict in Organization of scene tree - (organizing by logical structure) Organization due to initialization order Organization due to draw order The tension of these things likely leads to some norms I need to establish for myself.</description>
+    <pubDate>Fri, 24 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Software Engineering</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Software-Engineering</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Software-Engineering</guid>
-    <description>Software Architecture System Design Data Engineering Game Development.</description>
-    <pubDate>Fri, 17 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Ship control panel game with hotkey only</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Ship-control-panel-game-with-hotkey-only</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Ship-control-panel-game-with-hotkey-only</guid>
+    <description>After playing Glyphica I think I’ve found a path to implementation of a long standing game idea I’ve had about being the commander of your ship and being able to shoot and direct guns ...</description>
+    <pubDate>Thu, 23 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Check velocity lerp</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Check-velocity-lerp</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Check-velocity-lerp</guid>
-    <description>Frame rate independent I s 1 - exp some value minus delta.</description>
-    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Joining the adventure game idea</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Joining-the-adventure-game-idea</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Joining-the-adventure-game-idea</guid>
+    <description>You choose if you go on an adventure. If you do you get the loot cut if you don’t you don’t but you also don’t get consequences You get to see info about the party going and some info on quest and risk levels etc.</description>
+    <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Do curves solve my breakout x bel problem</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Do-curves-solve-my-breakout-x-bel-problem</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Do-curves-solve-my-breakout-x-bel-problem</guid>
-    <description>Used in 2025-10-15 and it did in fact make implementing the paddle behavior wayyy easier. youtu.be/cTSrjN_2qDI.</description>
-    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
+    <title>Viewport and canvas ontology</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Viewport-and-canvas-ontology</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Viewport-and-canvas-ontology</guid>
+    <description>I need to learn about the structure of the game, things like camera → viewport → window. I don’t know what these constructs are and they get in my way when I do things like try to grab the root node of scene tree but get_tree().root isn’t the root node it’s a Window so that starts to confuse me.</description>
+    <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Menu for wedding</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Menu-for-wedding</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Menu-for-wedding</guid>
-    <description>3 hand passed items mini muffalatas chicken waffles Stuffed Mushrooms / mini crab cakes grazing station Spinich and atichoke dip / There is also a choice to make this crab dip which ...</description>
-    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
+    <title>2025-10-22 Study Session - Canvas godot</title>
+    <link>https://quartz.jzhao.xyz/Sources/2025-10-22-Study-Session---Canvas-godot</link>
+    <guid>https://quartz.jzhao.xyz/Sources/2025-10-22-Study-Session---Canvas-godot</guid>
+    <description>...</description>
+    <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>My Wedding</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/My-Wedding</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/My-Wedding</guid>
-    <description>Project to track notes and things related to wedding.</description>
-    <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
+    <title>GoDot</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/GoDot</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/GoDot</guid>
+    <description></description>
+    <pubDate>Tue, 21 Oct 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
