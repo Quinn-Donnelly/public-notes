@@ -16,7 +16,25 @@
     <link>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</link>
     <guid>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</guid>
     <description>Mochi prompts?1 Math academy recommendation AI Wrappers for textbook 2 Why put prompts in notes instead of in the external programs Prompts embeded with the orignal knowledge so ...</description>
-    <pubDate>Sun, 26 Oct 2025 12:26:14 GMT</pubDate>
+    <pubDate>Tue, 28 Oct 2025 02:46:41 GMT</pubDate>
+  </item><item>
+    <title>Healer pick heal game</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Healer-pick-heal-game</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Healer-pick-heal-game</guid>
+    <description>You have finite resources and you have to heal people getting hurt balancing garnered survival and risk.</description>
+    <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>School game</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/School-game</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/School-game</guid>
+    <description>Could be magic fantasy etc u go school.</description>
+    <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2025-W43 Newsletter thoughts</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-W43-Newsletter-thoughts</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-W43-Newsletter-thoughts</guid>
+    <description>Progress report my game work in maze Winnable maze for first level but maze hand made DFS based random maze for level 2 that changes every time Getting a second study session in and the ...</description>
+    <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>Weekly finds or weekly newsletter practice</title>
     <link>https://quartz.jzhao.xyz/Knowledge/Weekly-finds-or-weekly-newsletter-practice</link>
@@ -42,29 +60,11 @@
     <description>After playing Glyphica I think I’ve found a path to implementation of a long standing game idea I’ve had about being the commander of your ship and being able to shoot and direct guns ...</description>
     <pubDate>Thu, 23 Oct 2025 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Joining the adventure game idea</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Joining-the-adventure-game-idea</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Joining-the-adventure-game-idea</guid>
-    <description>You choose if you go on an adventure. If you do you get the loot cut if you don’t you don’t but you also don’t get consequences You get to see info about the party going and some info on quest and risk levels etc.</description>
-    <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Viewport and canvas ontology</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Viewport-and-canvas-ontology</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Viewport-and-canvas-ontology</guid>
-    <description>I need to learn about the structure of the game, things like camera → viewport → window. I don’t know what these constructs are and they get in my way when I do things like try to grab the root node of scene tree but get_tree().root isn’t the root node it’s a Window so that starts to confuse me.</description>
-    <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>2025-10-22 Study Session - Canvas godot</title>
-    <link>https://quartz.jzhao.xyz/Sources/2025-10-22-Study-Session---Canvas-godot</link>
-    <guid>https://quartz.jzhao.xyz/Sources/2025-10-22-Study-Session---Canvas-godot</guid>
+    <title>2025-10-23 Study Session - images textures and shaders</title>
+    <link>https://quartz.jzhao.xyz/Sources/2025-10-23-Study-Session---images-textures-and-shaders</link>
+    <guid>https://quartz.jzhao.xyz/Sources/2025-10-23-Study-Session---images-textures-and-shaders</guid>
     <description>...</description>
-    <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>GoDot</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/GoDot</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/GoDot</guid>
-    <description></description>
-    <pubDate>Tue, 21 Oct 2025 00:00:00 GMT</pubDate>
+    <pubDate>Thu, 23 Oct 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
