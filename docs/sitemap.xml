@@ -122,6 +122,9 @@
     <loc>https://quartz.jzhao.xyz/Knowledge/Always-carry-something-from-walk-in</loc>
     <lastmod>2025-10-08T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://quartz.jzhao.xyz/Knowledge/AnimationPlayer-and-AnimatedSprite2D</loc>
+    <lastmod>2025-11-24T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/Are-IQ-tests-good-at-measuring-anything</loc>
     <lastmod>2025-09-13T00:00:00.000Z</lastmod>
   </url><url>
@@ -191,6 +194,9 @@
     <loc>https://quartz.jzhao.xyz/Knowledge/Do-curves-solve-my-breakout-x-bel-problem</loc>
     <lastmod>2025-10-16T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://quartz.jzhao.xyz/Knowledge/Duel-at-Dawn</loc>
+    <lastmod>2025-11-22T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/Earn-your-adoption-then-standardize-it</loc>
     <lastmod>2025-09-29T00:00:00.000Z</lastmod>
   </url><url>
@@ -221,6 +227,9 @@
     <loc>https://quartz.jzhao.xyz/Knowledge/Give-a-talk-on-taste-re-software-engineering</loc>
     <lastmod>2025-10-08T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://quartz.jzhao.xyz/Knowledge/GoDot-Animation-Docs</loc>
+    <lastmod>2025-11-01T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/GoDot-Docs-Tutorial</loc>
     <lastmod>2025-04-11T00:00:00.000Z</lastmod>
   </url><url>
@@ -247,6 +256,9 @@
   </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/How-should-you-live</loc>
     <lastmod>2025-09-29T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Knowledge/How-to-tell-north-from-the-big-dipper</loc>
+    <lastmod>2025-10-31T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/Incremental-Game</loc>
     <lastmod>2025-08-04T00:00:00.000Z</lastmod>
@@ -329,6 +341,9 @@
     <loc>https://quartz.jzhao.xyz/Knowledge/Reading-queue-in-obsidian-and-website</loc>
     <lastmod>2025-10-13T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://quartz.jzhao.xyz/Knowledge/Recovering-streaks-as-a-motivator</loc>
+    <lastmod>2025-11-25T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/Reselency-strategies</loc>
     <lastmod>2025-09-29T00:00:00.000Z</lastmod>
   </url><url>
@@ -383,6 +398,9 @@
     <loc>https://quartz.jzhao.xyz/Knowledge/Telescoping-pattern</loc>
     <lastmod>2025-09-13T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://quartz.jzhao.xyz/Knowledge/Templater-escape-sequence</loc>
+    <lastmod>2025-11-01T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/The-Way-I-Work-v2</loc>
     <lastmod>2024-09-22T00:00:00.000Z</lastmod>
   </url><url>
@@ -415,6 +433,9 @@
   </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/Try-to-synth-my-current-software-engineering-notes</loc>
     <lastmod>2025-10-08T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Knowledge/Ubuntu-Upgrade-Notes</loc>
+    <lastmod>2025-11-03T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Knowledge/Undotree-obsidian</loc>
     <lastmod>2025-10-08T00:00:00.000Z</lastmod>
@@ -533,6 +554,12 @@
     <loc>https://quartz.jzhao.xyz/Sources/2025-10-23-Study-Session---images-textures-and-shaders</loc>
     <lastmod>2025-10-23T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://quartz.jzhao.xyz/Sources/2025-10-27-Study-Session---do-morning-programming</loc>
+    <lastmod>2025-10-27T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Sources/2025-W44-Newsletter</loc>
+    <lastmod>2025-11-01T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/Sources/Brandon-Boswell-Year-in-Review</loc>
     <lastmod>2924-09-07T00:00:00.000Z</lastmod>
   </url><url>
@@ -546,13 +573,19 @@
     <lastmod>2025-09-07T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</loc>
-    <lastmod>2025-10-28T02:46:41.666Z</lastmod>
+    <lastmod>2025-11-25T15:53:59.717Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Sources/Make-these-ribs</loc>
     <lastmod>2025-10-06T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://quartz.jzhao.xyz/Sources/Melt-gourmet-cheeseburgers</loc>
+    <lastmod>2025-11-25T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/Sources/Microsoft-amplifier</loc>
     <lastmod>2025-10-06T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Sources/Return-of-obra-dinn-recommendation</loc>
+    <lastmod>2025-11-25T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Sources/Rss-subscribe-maybe</loc>
     <lastmod>2025-10-08T00:00:00.000Z</lastmod>
@@ -565,6 +598,12 @@
   </url><url>
     <loc>https://quartz.jzhao.xyz/Sources/Voice-to-text-transcriptions</loc>
     <lastmod>2025-10-08T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Sources/Your-boos-do-not-mean-anything</loc>
+    <lastmod>2025-11-25T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Sources/Zoom-H6-Microphone</loc>
+    <lastmod>2025-11-23T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/</loc>
     <lastmod>2024-09-07T00:00:00.000Z</lastmod>
