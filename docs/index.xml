@@ -16,7 +16,31 @@
     <link>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</link>
     <guid>https://quartz.jzhao.xyz/Sources/Joe-Walker-podcast-process</guid>
     <description>Mochi prompts?1 Math academy recommendation AI Wrappers for textbook 2 Why put prompts in notes instead of in the external programs Prompts embeded with the orignal knowledge so ...</description>
-    <pubDate>Tue, 25 Nov 2025 15:53:59 GMT</pubDate>
+    <pubDate>Tue, 02 Dec 2025 03:38:36 GMT</pubDate>
+  </item><item>
+    <title>2025-12-01 Study Session - Aesprite animation learning</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-12-01-Study-Session---Aesprite-animation-learning</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-12-01-Study-Session---Aesprite-animation-learning</guid>
+    <description>...</description>
+    <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Initramfs</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/Initramfs</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/Initramfs</guid>
+    <description>Currently have a faultering drive in Mayonaka fsck /dev/sda5 -y1 START Basic When the filesystem fails due to bad drive what command do you run? (command and the one required option ...</description>
+    <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2025-11-26 Study Session - Reaper Midi Song</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-11-26-Study-Session---Reaper-Midi-Song</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-11-26-Study-Session---Reaper-Midi-Song</guid>
+    <description>...</description>
+    <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2025-11-25 Designing workouts</title>
+    <link>https://quartz.jzhao.xyz/Knowledge/2025-11-25-Designing-workouts</link>
+    <guid>https://quartz.jzhao.xyz/Knowledge/2025-11-25-Designing-workouts</guid>
+    <description>Planning on hitting about 4 days a week seeing if that is a reasonable target for sustained. Gives me one flexible day in the week to have one day to do other things or slip up once and have Saturday as my recover that day, then have Sunday certain rest day.</description>
+    <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>Recovering streaks as a motivator</title>
     <link>https://quartz.jzhao.xyz/Knowledge/Recovering-streaks-as-a-motivator</link>
@@ -41,30 +65,6 @@
     <guid>https://quartz.jzhao.xyz/Sources/Your-boos-do-not-mean-anything</guid>
     <description>Quote Your boos dont mean anything to me ive seen what you people cheer for1 START Cloze {{c1::Your boos don’t mean anything to me,}} {{c2::I’ve seen what you people cheer for.}} ID: ...</description>
     <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>AnimationPlayer and AnimatedSprite2D</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/AnimationPlayer-and-AnimatedSprite2D</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/AnimationPlayer-and-AnimatedSprite2D</guid>
-    <description>Question I need to learn how to use animation in GoDot. I’ve done it with just AnimatedSprite2D and I’ve done it with just AnimationPlayer but haven’t used both.</description>
-    <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Zoom H6 Microphone</title>
-    <link>https://quartz.jzhao.xyz/Sources/Zoom-H6-Microphone</link>
-    <guid>https://quartz.jzhao.xyz/Sources/Zoom-H6-Microphone</guid>
-    <description>This was the microphone recommended in the first sound effect video I was watching by Blipsounds.</description>
-    <pubDate>Sun, 23 Nov 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Duel at Dawn</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Duel-at-Dawn</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Duel-at-Dawn</guid>
-    <description>A dueling game where you face off against an opponent. side view perspective. My goal is to start learning combat mechanics. My own art from Asprite - animated myself My own background music - built in Reaper Found for sound effects, know some podcasts that use it will test that out Using sound effects - using or found in Reaper Lots to learn here but native linux and found Blipsounds as knowledge source who also uses it Movement system side to side Basic AI to fight against Juice - particles and sounds that make feeling of hitting good Combat system Light attack Heavy attack Stretch Block Counter Faint 2025-11-22 Getting setup my scope and tooling.</description>
-    <pubDate>Sat, 22 Nov 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Ubuntu Upgrade Notes</title>
-    <link>https://quartz.jzhao.xyz/Knowledge/Ubuntu-Upgrade-Notes</link>
-    <guid>https://quartz.jzhao.xyz/Knowledge/Ubuntu-Upgrade-Notes</guid>
-    <description>nvidia-driver-libs:i386 is required with it’s addional - due to Vulkan (additional) and Steam being a 32 bit program. /etc/default/grub - the grub configuration file location Running sudo apt install lxappearance gnome-tweaks dconf-editor as the gnome-control-center now only runs if you are Unity Gnome setup.</description>
-    <pubDate>Mon, 03 Nov 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
